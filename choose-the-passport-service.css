@@ -1,0 +1,284 @@
+.choose-the-passport-service {
+    height: 719px;
+    padding: 0 60px;
+}
+.choose-the-passport-service-main {
+    padding: 72px 90px;
+    background: linear-gradient(
+      180deg,
+    rgba(0, 97, 215, 0) 0%,
+    rgba(0, 97, 215, 0.1) 100%
+    );
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 48px;
+}
+.choose-the-passport-service-main h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700; /* Bold */
+    font-style: normal; /* 'Bold' is a weight, not a style */
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0;
+    text-align: center;
+    color: rgba(11, 65, 125, 1);
+    text-align: center;
+}
+.middle-content {
+    height: 39px;
+    /* gap: 91px; */
+    display: flex;
+    justify-content: space-between;
+}
+.middle-content .middle-content-btn {
+    position: relative; 
+    height: 39px;
+    padding: 0;
+    font-weight: 400; /* Regular */
+    font-style: normal; /* 'Regular' is not valid; use 'normal' */
+    font-size: 16px;
+    line-height: 19px; /* 100% */
+    letter-spacing: 0;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.middle-content-btn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 25%; /* Centering the border */
+    width: 50%; /* Half width */
+    height: 3px;
+    background-color:rgba(77, 161, 255, 1);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.middle-content-btn:hover::after {
+    transform: scaleX(1);
+}
+.end-content {
+    height: 372px;
+    display: flex;
+    gap: 38px;
+    margin: 0 auto;
+}
+.end-content .left {
+    background-image: url('./public/images/renew-your-passport-bg.svg');
+    width: 480px;
+    height: 380px;
+    border-radius: 10px;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.end-content .left .top {
+    padding-top: 28px;
+    padding-left: 28px;
+}
+.end-content .left .top-content {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: start;
+    padding-right: 141px;
+}
+.end-content .left .top-content h1 {
+    font-weight: 500; /* Medium weight */
+    font-style: normal; /* 'Medium' is not a valid font-style */
+    font-size: 20px;
+    line-height: 24px; /* Or line-height: 1; */
+    letter-spacing: 0;
+    color: white;
+    margin-bottom: 0;
+}
+.end-content .left .top-content p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;        /* Regular weight */
+    font-style: normal;      /* 'Regular' is not a valid value */
+    font-size: 14px;
+    line-height: 17px;          /* 100% = 1 (unitless is better) */
+    letter-spacing: 0;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0;
+}
+.end-content .left .bottom {
+    padding-left: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-bottom: 28px;
+    justify-content: space-between;
+}
+.end-content .left .bottom-content {
+    height: 34px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;       /* Medium weight */
+    font-style: normal;     /* 'Medium' is not valid, use 'normal' */
+    font-size: 14px;
+    line-height: 17px;         /* 100% = 1 (unitless is better) */
+    letter-spacing: 0;
+    color: rgba(255, 255, 255, 0.9);
+    
+}
+.end-content .left .bottom-content .bottom-content-img {
+    background-color: rgba(11, 65, 125, 1);
+    border-radius: 70px;
+    height: 34px;
+    width: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.end-content .right {
+    width: 480px;
+    height: 372px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+.end-content .right .right-btn {
+    width: 100%;
+    height: 84px;
+    padding: 21px 20px 23px 20px;
+    border-radius: 10px;
+    background-color: white; /* Swapped: now default is white */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 0.4px solid rgba(11, 65, 125, 0.7); */
+    outline: 0.4px solid rgba(11, 65, 125, 0.7);
+    border: none;
+}
+
+/* Right Button (Active State) */
+.end-content .right .right-btn.active {
+    background-color: rgba(11, 65, 125, 1); /* Swapped: active is dark blue */
+}
+
+/* Icon logic */
+.right-btn .icon.checked {
+    display: none;
+}
+.right-btn.active .icon.checked {
+    display: inline;
+}
+.right-btn.active .icon.unchecked {
+    display: none;
+}
+
+/* Main content container inside button */
+.end-content .right .right-btn .right-btn-main {
+    display: flex;
+}
+
+/* Title & description section */
+.end-content .right .right-btn .right-btn-content {
+    height: 39px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 20px;
+    margin-right: 12px;
+}
+
+/* Discount pill */
+.end-content .right .right-btn .discount {
+    width: 74px;
+    height: 21px;
+    padding: 5px 10px;
+    background-color: rgba(0, 149, 255, 0.2);
+    border-radius: 1200px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(0, 149, 255, 0.9); /* Swapped: now default is blue */
+    align-self: start;
+}
+.end-content .right .right-btn .discount.active {
+    background-color: rgba(0, 149, 255, 0.2);
+    color: rgba(255, 255, 255, 0.9); /* Swapped: now white in active */
+}
+
+/* Price amount */
+.end-content .right .right-btn .amount {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0;
+    color: rgba(11, 65, 125, 1); /* Swapped: now blue in default */
+}
+.end-content .right .right-btn .amount.active {
+    color: rgba(255, 255, 255, 1); /* Swapped: white in active */
+}
+
+/* Title (h6) */
+.end-content .right .right-btn .right-btn-content h6 {
+    margin-bottom: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0;
+    color: rgba(11, 65, 125, 1); /* Swapped: blue in default */
+}
+.end-content .right .right-btn .right-btn-content h6.active {
+    color: rgba(255, 255, 255, 1); /* Swapped: white in active */
+}
+
+/* Subtitle (p) */
+.end-content .right .right-btn .right-btn-content p {
+    margin-bottom: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0;
+    color: rgba(11, 65, 125, 0.7); /* Swapped: blue in default */
+    text-align: start;
+}
+.end-content .right .right-btn .right-btn-content p.active {
+    color: rgba(255, 255, 255, 0.6); /* Swapped: white in active */
+}
+.choose-the-passport-service .get-started-btn {
+    width: 114px;
+    height: 33px;
+    border-radius: 1000px;
+    background-color: white;
+    outline: none;
+    border: 0;
+    padding: 8px 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;       /* Medium weight */
+    font-style: normal;     /* 'Medium' is not a valid font-style */
+    font-size: 14px;
+    line-height: 17px;         /* 100% line height */
+    letter-spacing: 0; 
+    align-self: flex-end;
+    margin-right: 28px;
+    color: rgba(11, 65, 125, 1);
+    display: flex;
+    align-items: center;
+    outline: none;
+}

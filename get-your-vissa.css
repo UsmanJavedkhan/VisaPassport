@@ -1,0 +1,253 @@
+.get-your-vissa {
+    height: 628px;
+    padding: 0 60px 60px;
+}
+.get-your-vissa-main {
+    background-image: url('./public/images/get-your-vissa-main-bg.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 478px;
+    display: flex;
+    gap: 72px;
+    justify-content: space-between;
+}
+.get-your-vissa .left {
+    padding: 66px 0 100px 90px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* righttttt imageeee */
+.get-your-vissa .right {
+    width: 55%;
+    padding: 28px 22px 53px;
+    position: relative;
+}
+.approved-vissas {
+    width: 189.1236px;
+    height: 71.6713px;
+    transform: rotate(0deg);
+    opacity: 1;
+    position: absolute; /* Needed to apply top & left */
+    top: 59.14px;
+    left: 44.47px;
+    gap: 9.89px; /* Works only with flex or grid */
+    border-radius: 14.84px;
+    padding: 14.84px;
+    background-color: white;
+    display: flex;
+
+}
+.approved-vissas-left-div {
+    width: 39px;
+    height: 39px;
+    background-color: rgba(255, 206, 85, 1);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.approved-vissas-left-div img {
+    width: 19.5px;
+    height: 19.5px;
+}
+.approved-vissas-right-div {
+
+}
+.approved-vissas-right-div h6 {
+     font-family: 'Poppins', sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 14px;
+  line-height: 100%; /* Or just 1 */
+  letter-spacing: 0;
+  color: rgba(51, 51, 51, 1);
+}
+.approved-vissas-right-div p {
+      font-family: 'Poppins', sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 14px;
+  line-height: 100%; /* or 1 */
+  letter-spacing: 0;
+
+    color: rgba(144, 144, 144, 1);
+}
+.approved-vissas-get-ready {
+    width: 189.1236px;
+    height: 71.6713px;
+    transform: rotate(0deg);
+    opacity: 1;
+    position: absolute; /* Needed to apply top & left */
+    top: 33%;
+    right: 30.47px;
+    gap: 9.89px; /* Works only with flex or grid */
+    border-radius: 14.84px;
+    padding: 14.84px;
+    background-color: white;
+    display: flex;
+
+}
+.get-ready-left-div {
+    width: 40px;
+    height: 39px;
+    background-color: rgba(255, 206, 85, 1);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.approved-vissas-left-div img {
+    width: 14.5px;
+    height: 17.5px;
+}
+.get-ready-right-div {
+
+}
+.get-ready-right-div h6 {
+     font-family: 'Poppins', sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 14px;
+  line-height: 100%; /* Or just 1 */
+  letter-spacing: 0;
+  color: rgba(51, 51, 51, 1);
+}
+.get-ready-right-div p {
+      font-family: 'Poppins', sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 14px;
+  line-height: 100%; /* or 1 */
+  letter-spacing: 0;
+
+    color: rgba(144, 144, 144, 1);
+}
+/* right endddddddddddddddddd */
+.get-your-vissa .left h1 {
+    font-family: 'Inter', sans-serif;
+  font-weight: 700; /* Bold */
+  font-style: normal; /* Use 'italic' if italic is needed */
+  font-size: 48px;
+  line-height: 58px; /* Or 1 if using unitless */
+  letter-spacing: 0;
+  color: rgba(11, 65, 125, 1);
+  margin-bottom: 0;
+}
+.get-your-vissa .left p {
+   font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Regular */
+  font-style: normal; /* 'Regular' is not a valid CSS value */
+  font-size: 14px;
+  line-height: 17px; /* or 1 */
+  letter-spacing: 0;
+  color: rgba(48, 48, 48, 1);
+  margin-bottom: 0;
+}
+.get-your-vissa .left .top {
+     font-family: 'Inter', sans-serif;
+    font-weight: 500; /* Medium */
+    font-style: normal; /* 'Medium' is not valid, use 'normal' */
+    font-size: 11.95px;
+    line-height: 14px; /* or 1 */
+    letter-spacing: 0;
+    text-align: start;
+    color: rgba(48, 48, 48, 1);
+}
+.get-your-vissa .left .travel {
+    height: 50px;
+    width: 100%;
+    padding: 5px 5px 5px 23px;
+    display: flex;
+    justify-content: space-between;
+     box-shadow: 0px 1.52px 14.06px 0px rgba(20, 20, 43, 0.12);
+     background-color: white;
+     border-radius: 757px;
+}
+.get-your-vissa .left .travel .travel-left {
+    display: flex;
+    gap: 64px;
+}
+.get-your-vissa .left .travel .travel-left-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.get-your-vissa .left .travel .travel-left-div .icon-text p {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -1%;
+    /* text-transform: uppercase; */
+    margin-bottom: 0;
+
+}
+.get-your-vissa .left .travel .travel-left-div .icon-text {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.get-your-vissa .left .travel .travel-btn {
+    border-radius: 757px;
+    height: 39.39px;
+    background-color: rgba(255, 194, 0, 1);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500; /* Medium */
+    font-style: normal; /* 'Medium' is not valid for font-style */
+    font-size: 12.12px;
+    line-height: 100%; /* or 1 */
+    padding: 11px 20px 12px 20px;
+    color: white;
+    border: none;
+    outline: none;
+    letter-spacing: 0;
+}
+.get-your-vissa .left .bottom {
+    font-family: 'Inter', sans-serif;
+  font-weight: 700; /* Bold */
+  font-style: normal; /* 'Bold' is not valid for font-style */
+  font-size: 10.24px;
+  line-height: 12px; /* or 1 */
+  letter-spacing: 0;
+  text-align: start;
+
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: currentColor; /* Optional, sets color */
+  text-decoration-thickness: 0.01em; /* Use a valid unit, see note */
+  text-underline-offset: 24.5%; /* This is the correct modern CSS property */
+  text-decoration-skip-ink: auto;
+}
+.get-your-vissa .left .review .star-group {
+    width: 68px;
+    height: 12px;
+}
+.get-your-vissa .left .review .trust-pilot {
+    width: 60px;
+    height: 14px;
+}
+.travel-dropdown {
+    height: 11px;
+}
+
+.get-your-vissa-country {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: transparent; /* Optional */
+  padding: 0; /* Optional spacing */
+  color: inherit; /* Inherit text color */
+  font-size: 9.09px;
+  line-height: 11px;
+  font-weight: 400;
+  color: rgba(118, 118, 118, 1);
+  height: 11px;
+}
+
+.get-your-vissa-country:focus,
+.get-your-vissa-country:active {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}

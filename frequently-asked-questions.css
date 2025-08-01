@@ -1,0 +1,389 @@
+.frequently-asked-questions {
+    padding: 72px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    position: relative;
+}
+.frequently-asked-questions .heading {
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.frequently-asked-questions .heading h1 {
+    font-weight: 700;        /* Bold */
+    font-style: normal;      /* 'Bold' is a weight, not a style */
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: rgba(11, 65, 125, 1);
+}
+.frequently-asked-questions .heading p {
+    font-family: 'Inter', sans-serif;
+  font-weight: 400;        /* Regular */
+  font-style: normal;      /* 'Regular' = normal */
+  font-size: 14px;
+  line-height: 17px;          /* 100% line height */
+  letter-spacing: 0;
+  text-align: center;
+    color: rgba(11, 65, 125, 1);
+}
+.frequently-asked-questions .content {
+    margin: 0 12px;
+    display: flex;
+    gap: 98px;
+    justify-content: space-between;
+}
+.frequently-asked-questions .content .list-item-btns {
+    width: 212px;
+    height: 343px;
+    padding-top: 29px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.frequently-asked-questions .content .list-item-btns button {
+    width: 212px;
+    height: 53px;
+    font-family: 'Inter', sans-serif;
+  font-weight: 500;        /* 'Medium' = 500 */
+  font-style: normal;      /* 'Medium' is a weight, not a style */
+  font-size: 14px;
+  line-height: 1;          /* 100% line height */
+  letter-spacing: 0;
+  color: rgba(11, 65, 125, 1);
+  border: none;
+  text-align: start;
+  padding: 20px 0 23px 15px;
+  background-color: white;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+.tab-btn.active {
+  background-color: #0B417D;
+  color: #fff;
+}
+
+.frequently-asked-questions .content .list-items-content {
+    /* width: 806px; */
+    max-width: 806px;
+    /* height: 460px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.frequently-asked-questions .content .list-items-content .single-list-item {
+    width: 806px;
+    height: 82px;
+    border-bottom: 0.5px solid rgba(11, 65, 125, 0.6);
+    padding: 20px 25px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.frequently-asked-questions .content .list-items-content .single-list-item-open {
+     /* width: 806px; */
+    height: 116px;
+    border-bottom: 0.5px solid rgba(11, 65, 125, 0.6);
+    padding: 25px 23px 25px 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 121, 255, 0.03);
+}
+
+.single-list-item-open .single-list-item-open-content {
+    gap: 12px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+}
+.single-list-item-open .single-list-item-open-content .para {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;       /* 'Medium' in Figma = 500 */
+    font-style: normal;     /* 'Medium' is not a valid font-style */
+    font-size: 16px;
+    line-height: 1;         /* 100% line-height */
+    letter-spacing: 0;
+    color: rgba(0, 0, 0, 1);
+}
+.single-list-item-open .single-list-item-open-content .para1 {
+    font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0;
+  padding-right: 41px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.frequently-asked-questions .content .list-items-content .single-list-item .title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;       /* 'Medium' weight */
+    font-style: normal;     /* 'Medium' is not a valid CSS font-style */
+    font-size: 16px;
+    line-height: 1;         /* 100% line height */
+    letter-spacing: 0;
+    color: rgba(0, 0, 0, 1);
+}
+.frequently-asked-questions .content .list-items-content .single-list-item .single-list-item-btn {
+     /* width: 32px;
+    height: 32px;
+    top: 25px;
+    left: 751px;
+    border-radius: 3.81px;
+    opacity: 1;
+    transform: rotate(0deg);
+    border: none; */
+    cursor: pointer;
+}
+.frequently-asked-questions .content .list-item-btns button:hover {
+    background-color: rgba(0, 121, 255, 0.1);
+    border-radius: 10px;
+}
+.frequently-asked-questions .content .list-item-btns .active {
+    background-color: rgba(0, 121, 255, 0.1);
+    border-radius: 10px;
+}
+.frequently-asked-questions .content .list-item-btns button:not(.active):hover {
+    background-color: rgba(0, 121, 255, 0.1);
+    border-radius: 10px;
+}
+/* .frequently-asked-questions .content .list-item-btns button:nth-child(1) {
+    background-color: rgba(0, 121, 255, 0.1);
+    border-radius: 10px;
+} */
+.frequently-asked-questions .list-items-footer {
+    height: 126px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(0, 121, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 42px;
+}
+.frequently-asked-questions .list-items-footer .contact-us {
+    width: 150px;
+    height: 52px;
+    border-radius: 1000px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;       /* 'Medium' in Figma = 500 */
+    font-style: normal;     /* 'Medium' is a weight, not a style */
+    font-size: 16px;
+    line-height: 1;         /* 100% line height */
+    letter-spacing: 0;
+    color: white;
+    background-color: rgba(11, 65, 125, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: none;
+}
+.frequently-asked-questions .list-items-footer h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;       /* 'Medium' weight */
+    font-style: normal;     /* 'Medium' is not a valid font-style in CSS */
+    font-size: 16px;
+    line-height: 19px;         /* 100% line height */
+    letter-spacing: 0;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 0;
+}
+.frequently-asked-questions .list-items-footer p {
+     font-family: 'Inter', sans-serif;
+  font-weight: 400;       /* Regular */
+  font-style: normal;     /* 'Regular' = normal in CSS */
+  font-size: 14px;
+  line-height: 17px;         /* 100% line height */
+  letter-spacing: 0;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 0;
+}
+.frequently-asked-questions .list-items-footer .left {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.right-side-plane-icon {
+  position: absolute;
+  bottom: -90px;
+  left: -12px;
+}
+
+@media (max-width: 767px) {
+  .frequently-asked-questions {
+    padding: 46px 20px;
+    gap: 20px;
+  }
+  .frequently-asked-questions .heading {
+    gap: 20px;
+  }
+  .frequently-asked-questions .heading h1 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 0;
+    padding: 0 30px;
+  }
+  .frequently-asked-questions .content .list-item-btns {
+    width: auto;
+    flex-direction: row;
+    overflow-x: scroll;
+    height: 53px;
+    padding: 0;
+     scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none; 
+  }
+  .frequently-asked-questions .content {
+    flex-direction: column;
+    padding: 0;
+    /* align-items: center; */
+    gap: 20px;
+  }
+  .frequently-asked-questions .content .list-items-content {
+    width: 100%;
+  }
+  .frequently-asked-questions .content .list-items-content .single-list-item .title {
+     word-break: break-word;
+    overflow-wrap: break-word;
+    line-height: 19px;
+  }
+  .frequently-asked-questions .content .list-items-content .single-list-item-open {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+    height: fit-content;
+  }
+  .single-list-item-open .single-list-item-open-content .para1 {
+    padding-right: 29px;
+  }
+  .single-list-item-open .single-list-item-open-content {
+    height: auto;
+    width: 100%;
+  }
+
+  .frequently-asked-questions .content .list-items-content .single-list-item {
+    width: 100%;
+    height: auto;
+  }
+  .frequently-asked-questions .list-items-footer {
+    padding: 32px 14px;
+    flex-direction: column;
+    align-items: start;
+    height: auto;
+    width: 100%;
+    gap: 12px;
+  }
+  .frequently-asked-questions .list-items-footer .contact-us {
+    height: 39px;
+    font-size: 12px;
+    line-height: 19px;
+    padding: 12px 20px;
+    width: auto;
+  }
+  .frequently-asked-questions .list-items-footer .contact-us img {
+    height: 16px;
+    width: 16px;
+  }
+  .right-side-plane-icon {
+    display: none;
+  }
+  .frequently-asked-questions .content .list-item-btns button {
+    width: max-content;
+    min-width: fit-content;
+    padding: 20px 23px 23px 23px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1330px) {
+  .frequently-asked-questions {
+    padding: 72px 60px;
+  }
+   .frequently-asked-questions .content .list-item-btns button {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .frequently-asked-questions .content {
+    /* display: block; */
+    gap: 38px;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+  }
+  .frequently-asked-questions .content .list-item-btns {
+    width: auto;
+    flex-direction: row;
+    overflow-x: scroll;
+    height: 53px;
+    padding: 0;
+     scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none; 
+  }
+  .frequently-asked-questions .content .list-items-content {
+    width: 100%;
+  }
+   .single-list-item-open .single-list-item-open-content {
+    height: auto;
+    width: 100%;
+  }
+  .frequently-asked-questions .content .list-items-content .single-list-item {
+    width: 100%;
+    height: auto;
+  }
+   .frequently-asked-questions .heading h1 { 
+    font-size: 34px;
+    line-height: 44px;
+   }
+}
+@media (min-width: 1441px) {
+  .frequently-asked-questions .heading p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .frequently-asked-questions .content .list-items-content {
+    max-width: 1310px;
+    width: 100%;
+  }
+  .frequently-asked-questions .content .list-items-content .single-list-item {
+    max-width: 1310px;
+    width: 100%;
+  }
+  .frequently-asked-questions .content .list-item-btns button {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .frequently-asked-questions .content .list-items-content .single-list-item .title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .single-list-item-open .single-list-item-open-content .para1 {
+    font-size: 16px;
+  }
+  .frequently-asked-questions .list-items-footer h6 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .frequently-asked-questions .list-items-footer p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .frequently-asked-questions .list-items-footer .contact-us {
+    height: 54px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .right-side-plane-icon {
+   bottom: 5px;
+   left: 0;
+  }
+}

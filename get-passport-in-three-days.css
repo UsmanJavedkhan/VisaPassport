@@ -1,0 +1,211 @@
+.get-passport-in-three-days {
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    position: relative;
+}
+.get-passport-in-three-days .top-sec {
+    height: 580px;
+    padding: 0 60px;
+    /* border-radius: 20px; */
+    display: flex;
+}
+.get-passport-in-three-days .top-sec .left {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: url('./public/images/get-your-passport.svg');
+     width: 660px;
+    height: 580px;
+    /* background-size: cover; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+}
+.get-passport-in-three-days .top-sec .left .left-section {
+    margin: 73px 49px 123px 90px;
+    width: 521px;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.get-your-passport-info-tag {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    height: 27px;
+}
+.get-your-info-tag {
+  height: 27px;
+  opacity: 1;
+    background-color: #0095FF33;
+  padding: 6px 12px;
+  gap: 3px;
+  border-radius: 100px;
+
+  display: flex; /* Required for gap to work */
+  align-items: center;
+   font-family: 'Inter', sans-serif;
+  font-weight: 600;       /* Semi Bold */
+  font-style: normal;     /* 'Semi Bold' is not valid for font-style */
+  font-size: 12px;
+  line-height: 15px;         /* or line-height: 100%; */
+  letter-spacing: 0;
+  color: white;
+}
+.info-tag-span {
+    font-family: 'Inter', sans-serif;
+  font-weight: 400;       /* Regular */
+  font-style: normal;     /* 'Regular' is not valid, use 'normal' */
+  font-size: 12px;
+  line-height: 15px;         /* or 100% */
+  letter-spacing: 0;
+}
+.left-section-heading {
+font-family: 'Inter', sans-serif;
+  font-weight: 700;         /* Bold */
+  font-style: normal;       /* 'Bold' is not valid here — use font-weight */
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: white;
+  margin-bottom: 0;
+}
+.left-section-heading span {
+    font-family: 'Inter', sans-serif;
+  font-weight: 700;         /* Bold weight */
+  font-style: normal;       /* 'Bold' is not valid for font-style */
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #FFC200;
+}
+.left-section-para {
+  font-weight: 400;       /* Regular weight */
+  font-style: normal;     /* 'Regular' is not a valid value */
+  font-size: 14px;
+  line-height: 17px;         /* Equivalent to 100% */
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+.get-started-your-app {
+  background: rgba(1, 106, 222, 1);
+  color: white;
+  width: fit-content;
+  height: 52px;
+  padding-left: 20px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  font-family: 'Inter';
+}
+
+.get-started-your-app img {
+  transition: transform 0.3s ease, margin-left 0.3s ease;
+  margin-left: 0;
+}
+
+.get-started-your-app:hover img {
+  transform: rotate(45deg);
+  margin-left: 12px;
+}
+.left-section-icons {
+    height: 31px;
+    display: flex;
+    gap: 10px;
+}
+.left-section-icons-content {
+    padding: 8px;
+    gap: 6px;
+     display: flex;
+     align-items: center;
+     font-family: 'Inter', sans-serif;
+    font-weight: 400;       /* Regular */
+    font-style: normal;     /* 'Regular' is not a valid value */
+    font-size: 12px;
+    line-height: 15px;         /* Equivalent to 100% */
+    letter-spacing: 0;
+    color: white;
+}
+.get-passport-in-reviews {
+    height: 33px;
+    gap: 10px;
+    box-shadow: 0px 4px 24px 0px #0B417D26;
+    border-radius: 100px;
+    padding: 8px 15px;
+    width: fit-content;
+    align-items: center;
+    background-color: white;
+    border-radius: 100px;
+}
+.get-passport-in-reviews span {
+  font-weight: 500;       /* Medium */
+  font-style: normal;     /* 'Medium' is not valid for font-style */
+  font-size: 12px;
+  line-height: 15px;         /* 100% line height */
+  letter-spacing: 0;
+  color: rgba(0, 0, 0, 1);
+}
+.get-passport-in-three-days .top-sec .right {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.get-passport-in-three-days .top-sec .right .right-image {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.expedited-passports-icons {
+   width: 100%;
+   max-width: 1231px;
+   margin: 0 auto;
+    gap: 92px;
+    padding: 0 144px;
+}
+.left-side-plane-icon-get-passport-in {
+    position: absolute;
+    bottom: -176px;
+    left: -5px;
+}
+@media (min-width: 1441px) {
+  .get-passport-in-three-days {
+    gap: 113px;
+  }
+  .get-passport-in-three-days .top-sec {
+    padding: 0 150px;
+  }
+  .get-passport-in-three-days .top-sec .left {
+    width: 810px;
+    height: 598px;
+     background-image: url('./public/images/get-your-passport-lg.png');
+  }
+  .get-passport-in-three-days .top-sec {
+    height: 598px;
+  }
+  .get-passport-in-three-days .top-sec .right {
+  }
+  .get-passport-in-three-days .top-sec .right .right-image {
+    display: none;
+  }
+  .get-passport-in-three-days .top-sec .right .right-image-lg {
+    display: block;
+    width: 810px;
+    height: 598px;
+  }
+  .get-your-info-tag {
+    font-size: 14px;
+  }
+  .left-section-heading {
+    font-size: 64px;
+    line-height: 77px;
+  }
+  .get-passport-in-three-days .top-sec .left .left-section {
+    margin: 63px 69px 58px 90px;
+    width: 651px;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1919px) { 
+  
+}

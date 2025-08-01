@@ -1,0 +1,715 @@
+.expedited-passports-section {
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 740px;
+}
+.expedited-passports-section .main-div-sec {
+   display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.expedited-passports {
+    padding-top: 73px;
+    padding-left: 150px;
+    width: 48%;
+}
+
+.expedited-passports .reviews {
+    height: 33px;
+    gap: 10px;
+    box-shadow: 0px 4px 24px 0px #0B417D26;
+    border-radius: 100px;
+    padding: 8px 15px;
+    width: fit-content;
+    align-items: center;
+}
+.expedited-passports .reviews span {
+  font-weight: 500;
+  color: black;
+  letter-spacing: 0;
+}
+/* .expedited-passports .high-approval-rate {
+  color: black;
+} */
+.high-approval-rate-wrapper {
+  position: relative;
+  /* height: 30px; */
+  overflow: hidden;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.high-approval-rate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  line-height: 15px;
+  color: black;
+  transition: opacity 0.3s ease;
+  margin: 6px 0;
+}
+
+.high-approval-rate.active {
+  opacity: 1;
+  position: relative;
+}
+.expedited-passports-icons {
+   width: 100%;
+   max-width: 1231px;
+   margin: 0 auto;
+    gap: 92px;
+    padding: 0 144px;
+}
+.expedited-passports-section-info-tag {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.info-tag {
+    font-size: 12px;
+    background-color: #0079FF08;
+    border: 0.3px sold rgba(11, 56, 125, 0.5);
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    gap: 3px;
+    padding:6px 12px;
+}
+.expedited-passports-img {
+  background-image: url('./public/expedited/passport1.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 580px; 
+  width: 50%;
+  margin-top: 9px;
+  position: relative;
+}
+.start-your-app-img-position {
+  position: relative;
+}
+
+.expedited-passports-img .start-your-app-img {
+  position: absolute;
+  bottom: 109px;
+  left: 49px;
+  /* opacity: 0; */
+  width: 176px;
+  height: 160px;
+  /* transform: translateY(0); */
+  /* transition: opacity 0.5s ease; */
+   box-shadow: 0px 3.06px 27.56px 0px rgba(11, 65, 125, 0.15);
+   border-radius: 7px;
+   z-index: 100;
+   background-color: white;
+}
+.start-your-app-img-header {
+  height: 37px;
+  background-color: white;
+  padding: 12px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.start-your-app-img-header::after {
+  content: "";
+  position: absolute;
+  /* bottom: 0; */
+  top: 35px;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  width: 151px;
+  height: 1px; /* Use at least 1px for visibility */
+  background-color: rgba(11, 65, 125, 0.3);
+}
+.start-your-app-img-header h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;         /* Semi Bold */
+  font-style: normal;       /* 'Semi Bold' is not a valid font-style */
+  font-size: 10.72px;
+  line-height: 13px;           /* 100% = 1 (unitless preferred) */
+  letter-spacing: 0;
+}
+.start-your-app-img-content {
+  padding: 13px 19px 13px 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.start-your-app-img-content-data {
+  height: 14px;
+  display: flex;
+  gap: 5.7px;
+  align-items: center;
+   font-family: 'Inter', sans-serif;
+  font-weight: 400;         /* Regular */
+  font-style: normal;       /* 'Regular' → use 'normal' in CSS */
+  font-size: 9.5px;
+  line-height: 11px;           /* 100% = 1 (unitless is preferred) */
+  letter-spacing: 0;
+  color: rgba(0, 0, 0, 0.6);
+}
+.start-your-app-img-content-data {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+/* Vertical connecting line (8px wide) */
+.start-your-app-img-content-data:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 8px; /* Adjust based on icon alignment */
+  top: 4px; /* starts below the icon */
+  width: 1px; /* ✅ Line width */
+  height: calc(100% + 19px); /* Extend down to connect with next icon */
+  border-radius: 4px; /* optional for rounded vertical line */
+  z-index: 0;
+}
+
+/* Yellow for first 2 lines */
+.start-your-app-img-content-data:nth-child(1)::before,
+.start-your-app-img-content-data:nth-child(2)::before {
+  background-color: rgba(255, 194, 0, 1);
+}
+
+/* Gray for next lines */
+.start-your-app-img-content-data:nth-child(3)::before,
+.start-your-app-img-content-data:nth-child(4)::before {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: icon size and z-index to appear above the line */
+.start-your-app-img-content-data img {
+  /* width: 20px; */
+  /* height: 20px; */
+  z-index: 1;
+}
+.passport-renewal-get-started-btn {
+  max-width: 628px;
+  position: relative;
+  left: 22%;
+  display: flex;
+  gap: 20px;
+}
+
+.get-started-your-app {
+  background-color: #0B417D;
+  color: white;
+  width: fit-content;
+  height: 52px;
+  padding:6px 6px 6px 20px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  font-family: 'Inter';
+}
+
+.get-started-your-app img {
+  transition: transform 0.3s ease, margin-left 0.3s ease;
+  margin-left: 0;
+}
+
+.get-started-your-app:hover img {
+  transform: rotate(45deg);
+  margin-left: 12px;
+}
+.passport-delivered {
+    background-color: white;
+    position: absolute;
+    top: 29%;
+    right: 13%;
+    height: 40px;
+    border-radius: 9px;
+    padding: 9px 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0px 4px 16px 0px #0B417D33;
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+    width: 160px;
+    animation: dropDown 2s ease-in-out infinite;
+}
+.passport-delivered :hover {
+    cursor: pointer;
+}
+.left-side-plane-icon {
+  position: absolute;
+  bottom: -190px;
+  left: -12px;
+}
+.expedited-main-paragraph-mobile {
+  display: none;
+}
+  .expedited-main-heading {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    height: auto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: start;
+  }
+
+@keyframes floatUpDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+@keyframes dropDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-float {
+  animation: floatUpDown 2s ease-in-out infinite;
+  opacity: 1 !important;
+}
+.expedited-main-paragraph {
+  padding-right: 25px;
+}
+
+@media (max-width: 767px) {
+  .expedited-passports-section {
+    padding: 20px;
+    gap: 30px;
+    height: auto;
+
+  }
+  .expedited-passports-section .main-div-sec {
+
+    flex-direction: column;
+  }
+  .expedited-passports {
+    padding: 0;
+    width: 100%;
+  }
+  .expedited-passports-section-info-tag {
+    gap: 10px;
+    padding-left:4px;
+    padding-right: 4px;
+    justify-content: center;
+  }
+  .info-tag {
+    font-size: 9px;
+    /* gap: 2px; */
+    display: inline-block;
+  }
+  .expedited-main-paragraph {
+  display: none;
+}
+.expedited-main-paragraph-mobile {
+  /* padding: 0 20px; */
+  text-align: center;
+  padding: 0 4px;
+  display: block;
+  line-height: 17px;
+}
+  .expedited-main-heading {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    height: auto;
+  }
+  .get-started-your-app {
+    font-size: 12px;
+    height: 38px;
+    margin: 0 auto;
+  }
+  .get-started-your-app-img {
+    height: 29px;
+    width: 29px;
+  }
+  .high-approval-rate-wrapper {
+    margin: 0 auto;
+    height: 31px;
+  }
+  .expedited-passports .reviews {
+    margin: 0 auto;
+    box-shadow: 0px 1px 5px 0px rgba(11, 65, 125, 0.15);
+    background-color: white;
+  }
+  .expedited-passports-img {
+    width: 100%;
+    height: 263px;
+  }
+  .expedited-passports-img .start-your-app-img {
+    width: 104px;
+    height: 95px;
+    /* bottom: 30px; */
+    border-radius: 4.55px;
+    left: 8%;
+    bottom: 10%;
+
+  }
+  .start-your-app-img-content {
+    gap: 6.92px;
+    padding: 8px 11.58px 8px 8px ;
+  }
+  .start-your-app-img-header {
+    border-top-left-radius: 4.55px;
+    border-top-right-radius: 4.55px;
+    padding: 7px;
+    height: 22px;
+    color: rgba(0, 0, 0, 1);
+  }
+  .start-your-app-img-header::after {
+    top: 22px;
+    width: 90px;
+  }
+  .start-your-app-img-header h6 {
+    font-size: 6.36px;
+    line-height: 8px;
+  }
+  .start-your-app-img-content-data {
+    height: 8.46px;
+    font-size: 5.64px;
+  }
+  .start-your-app-img-content-data img {
+    width: 8.46px;
+    height: 8.46px;
+  }
+  .start-your-app-img-content-data:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 4px; /* Adjust based on icon alignment */
+  top: 4px; /* starts below the icon */
+  width: 1px; /* ✅ Line width */
+  height: calc(100% + 11px); /* Extend down to connect with next icon */
+  border-radius: 4px; /* optional for rounded vertical line */
+  z-index: 0;
+}
+
+/* Yellow for first 2 lines */
+.start-your-app-img-content-data:nth-child(1)::before,
+.start-your-app-img-content-data:nth-child(2)::before {
+  background-color: rgba(255, 194, 0, 1);
+}
+
+/* Gray for next lines */
+.start-your-app-img-content-data:nth-child(3)::before,
+.start-your-app-img-content-data:nth-child(4)::before {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+  .passport-delivered {
+    font-size: 7px;
+    line-height: 9px;
+    height: 26px;
+    width: 104px;
+    right: 29px;
+  }
+  .passport-delivered img {
+    width: 16px;
+    height: 16px;
+  }
+  .passport-renewal-get-started-btn {
+   /* width: 100%; */
+   /* background-color: wheat; */
+    left: auto;
+    /* flex-direction: column; */
+    display: block;
+
+  }
+  .passport-renewal-get-started-btn .get-started-your-app {
+    width: max-content;
+    min-width: 218px;
+    max-width: 230px;
+    gap: 8px;
+    padding: 12px 5px 11px 17px;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+.expedited-passports-icons {
+  max-width: auto;
+  height: 12px;
+  gap: 28px;
+}
+.expedited-passports-icons img {
+  height: 11px;
+}
+.left-side-plane-icon {
+  display: none;
+}
+}
+@media (max-width: 390px) {
+   .info-tag {
+    font-size: 8px;
+    /* gap: 2px; */
+    display: inline-block;
+  }
+  .expedited-main-paragraph-mobile {
+    font-size: 13px;
+  }
+}
+@media (min-width: 768px) and (max-width:992px) {
+  .expedited-passports-section .main-div-sec {
+
+  }
+   .expedited-passports-img .start-your-app-img {
+    left: -3%;
+    bottom: 3%;
+
+  }
+  .left-side-plane-icon {
+    bottom: -149px;
+    left: -3px;
+    width: 74px;
+  }
+    .expedited-passports .reviews {
+      height: 30px;
+  }
+  .expedited-passports .reviews span {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .trust-pilot-passport-sec {
+    width: 60px;
+    height: 17px;
+  }
+  .star-group-passport-sec {
+    width: 60px;
+    height: 13px;
+  }
+  .expedited-passports-section {
+    height: auto;
+  }
+  .expedited-passports {
+    padding-left: 60px;
+    padding-top: 20px;
+  }
+  .expedited-passports-section-info-tag {
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+  }
+  .expedited-passports-img {
+    /* background-position: top; */
+    margin-top: 0;
+    height: -webkit-fill-available;
+  }
+   .expedited-main-heading {
+    font-size: 28px;
+    line-height: 34px;
+    text-align: start;
+    height: auto;
+  }
+  .passport-delivered {
+    top: 30%;
+    right: 6%;
+
+}
+  .get-started-your-app {
+    font-size: 12px;
+    line-height: 15px;
+    height: 38px;
+  }
+  .get-started-your-app img {
+    height: 29px;
+    width: 29px;
+  }
+  .expedited-passports-icons {
+  max-width: auto;
+  height: 14px;
+  gap: 38px;
+  margin-top: 40px;
+}
+.expedited-passports-icons img {
+  height: 12px;
+}
+     .passport-renewal-get-started-btn {
+   /* width: 100%; */
+   /* background-color: wheat; */
+    /* left: auto; */
+    /* flex-direction: column; */
+    /* display: block; */
+    justify-content: center;
+    left: 1px;
+
+
+  }
+  .passport-renewal-get-started-btn .get-started-your-app {
+    width: max-content;
+    min-width: 300px;
+    max-width: 300px;
+    width: max-content;
+    gap: 8px;
+    /* padding: 12px 5px 11px 16px; */
+    /* margin-top: 20px; */
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .passport-renewal-get-started-btn {
+    left: 0;
+  }
+  .passport-renewal-btn{
+    width: 220px;
+    height: 28px;
+    font-size: 12px;
+  }
+   .info-tag {
+    font-size: 10px;
+    line-height: 12px;
+    /* gap: 2px; */
+    display: inline-block;
+  }
+}
+@media (min-width: 993px) and (max-width: 1250px) {
+  .expedited-passports-section-info-tag {
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+  }
+  .expedited-main-heading {
+    font-size: 28px;
+    line-height: 34px;
+  }
+    .passport-renewal-get-started-btn {
+   /* width: 100%; */
+   /* background-color: wheat; */
+    left: 1px;
+    justify-content: center;
+    /* flex-direction: column; */
+    max-width: 100%;
+
+  }
+  .passport-renewal-get-started-btn .get-started-your-app {
+    width: max-content;
+    min-width: 300px;
+    max-width: 310px;
+    /* width: 300px; */
+    gap: 16px;
+    /* padding: 12px 5px 11px 16px; */
+    /* margin-top: 20px; */
+    /* font-size: 12px; */
+    /* line-height: 15px; */
+  }
+}
+
+@media (min-width: 1441px) { 
+  .expedited-passports {
+    padding-top: 43px;
+    padding-left: 200px;
+  }
+  .expedited-passports-section .main-div-sec {
+    gap: 114px;
+  }
+  .expedited-passports-section {
+    height: auto;
+    padding-bottom: 0;
+  }
+  .expedited-passports-img {
+    background-image: url('./public/expedited/passport-1-lg.svg');
+    height: 707px;
+    background-position: top;
+  }
+  .info-tag {
+    font-size: 14px;
+  }
+  .expedited-main-heading {
+    font-size: 64px;
+    line-height: 77px;
+  }
+  .expedited-main-paragraph {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .passport-renewal-get-started-btn {
+    max-width: 646px;
+    left: 0;
+  }
+  .four-steps-footer {
+    align-items: center;
+  }
+  .get-started-your-app {
+    height: 54px;
+    padding: 7px 7px 7px 20px;
+    font-size: 18px;
+    width: fit-content;
+  }
+  .high-approval-rate {
+    font-size: 16px;
+  }
+  .high-approval-rate img {
+    height: 18px;
+    width: 18px;
+  }
+  .expedited-passports .reviews {
+    padding: 9px 18px;
+    border-radius: 121px;
+  }
+  .expedited-passports .reviews span {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+  .star-group-passport-sec {
+    width: 97px;
+    height: 16.55px;
+  }
+  .trust-pilot-passport-sec {
+    width: 83px;
+    height: 20px;
+  }
+  .expedited-passports-img .start-your-app-img {
+    width: 191px;
+    height: 181px;
+    bottom: 22%;
+    left: 9%;
+  }
+  .start-your-app-img-header {
+    height: 42px;
+    padding: 13px;
+  }
+  .start-your-app-img-header::after {
+    width: 165px;
+    top: 42px;
+  }
+  .start-your-app-img-header h6 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .start-your-app-img-content {
+    gap: 13px;
+    padding: 15px 8px 15px 13px;
+  }
+  .start-your-app-img-content-data {
+    font-size: 10px;
+    gap: 6px;
+    line-height: 13px;
+    height: 16px;
+  }
+  .passport-delivered {
+    width: 181px;
+    height: 45px;
+    padding: 6px 10px;
+  }
+  .passport-delivered img {
+    width: 29px;
+    height: 29px;
+  }
+  .left-side-plane-icon { 
+    bottom: -80px;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1919px) { 
+  .info-tag {
+    font-size: 12px;
+  }
+ }
+

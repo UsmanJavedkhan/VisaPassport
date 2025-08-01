@@ -1,0 +1,198 @@
+.four-steps {
+    padding: 0 60px;
+    /* height: 798px; */
+} 
+.four-step-head {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #0B417D;
+    font-weight: 700;
+     font-style: normal;
+}
+.four-steps .four-steps-content {
+    background: linear-gradient(to bottom, rgba(0, 97, 215, 0), rgba(0, 97, 215, 0.2));
+    gap: 48px;
+    padding: 72px 90px;
+    border-radius: 20px;
+    height: 100%;
+}
+.four-steps-content .cards {
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    border-radius: 10px;
+    width: 260px;
+    height: 350px;
+    padding: 14px 18px;
+    gap: 14px;
+    justify-content: space-between;
+}
+.four-steps-content .cards-group {
+    gap: 32px;
+}
+.four-steps-content .cards .card-footer-text {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    vertical-align: end;
+}
+.four-steps-content .cards h1 {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 1);
+}
+.four-steps-content .cards p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 11px;
+}
+.four-steps-content .cards span {
+    background: #0095FF26;
+    color: #0095FF;
+    width: fit-content;
+    padding: 5px 15px;
+    height: 22px;
+    line-height: 100%;
+    font-size: 10px;
+    vertical-align: middle;
+}
+.four-steps-footer {
+    gap: 24px;
+}
+.four-steps-footer h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700; /* Bold weight */
+    font-style: normal; /* 'Bold' is not valid; use 'normal' or 'italic' */
+    font-size: 34px;
+    line-height: 60px;
+    letter-spacing: 0;
+    text-align: center;
+    color: rgba(11, 65, 125, 1);
+}
+.passport-renewal-btn {
+    width: 300px;
+    min-width: min-content;
+    height: 52px;
+    background-color: transparent;
+    border: 1px solid rgba(11, 65, 125, 1);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 20px 17px 20px;
+    color: rgba(11, 65, 125, 1);
+}
+
+@media (max-width: 767px) {
+  .four-steps {
+    top: 0;
+    padding: 46px 20px 0;
+  }
+  .four-steps .four-steps-content {
+    padding: 0;
+    gap: 32px;
+  }
+  .four-step-head {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .four-steps-footer h1 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .four-steps-footer {
+    padding: 0 25px 32px;
+    align-items: center;
+  }
+  .passport-renewal-btn {
+    width: 218px;
+    height: 38px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .four-steps-content .cards-group {
+    gap: 24px;
+  }
+
+}
+@media ((min-width: 768px) and (max-width:992px)) {
+  .four-steps .four-steps-content {
+    padding-top: 0;
+  }
+  .four-step-head {
+    font-size: 34px;
+    line-height: 44px;
+  }
+}
+@media (min-width: 1441px) and (max-width:1919px) { 
+  .four-steps {
+    padding: 0 62px;
+  }
+  .four-steps .four-steps-content {
+    padding: 72px 70px;
+  }
+  .four-steps-content .cards {
+    width: 100%;
+    max-width: 270px;
+    padding: 18px;
+  }
+  /* .four-steps-content .cards img {
+    width: 100%;
+  }
+  .four-steps-content .cards span {
+    font-size: 12px;
+    height: 25px;
+    line-height: 15px;
+  }
+  .four-steps-content .cards h1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .four-steps-content .cards p {
+    font-size: 16px;
+    line-height: 17px;
+  }
+  .four-steps-content .cards {
+    padding: 13px 18px;
+    height: auto;
+  }
+  .four-steps-content .cards .card-footer-text {
+    font-size: 12px;
+    line-height: 15px;
+  } */
+}
+@media (min-width: 1920px) { 
+  .four-steps {
+    padding: 0 62px;
+    background-color: white;
+  }
+  .four-steps .four-steps-content {
+    padding: 72px 88px;
+  }
+  .four-steps-content .cards {
+    width: 100%;
+    max-width: 381px;
+    padding: 18px;
+  }
+  .four-steps-content .cards .four-steps-content-image-new {
+    width: 100%;
+  }
+  .four-steps-content .cards span {
+    font-size: 12px;
+    height: 25px;
+    line-height: 15px;
+  }
+  .four-steps-content .cards h1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .four-steps-content .cards p {
+    font-size: 16px;
+    line-height: 17px;
+  }
+  .four-steps-content .cards {
+    padding: 13px 18px;
+    height: auto;
+  }
+  .four-steps-content .cards .card-footer-text {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

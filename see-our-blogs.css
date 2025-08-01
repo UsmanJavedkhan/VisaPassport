@@ -1,0 +1,234 @@
+.see-our-blogs {
+    padding: 72px 150px;
+}
+.see-our-blogs .main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: auto;
+}
+.see-our-blogs .main .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.see-our-blogs .main .heading h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;        /* Bold weight */
+    font-style: normal;      /* 'Bold' is not valid for font-style */
+    font-size: 48px;
+    line-height: 58px;          /* 100% = 1 (unitless is preferred) */
+    letter-spacing: 0;
+}
+.see-our-blogs .main .heading .view-all-see {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;                    /* Medium weight */
+    font-style: normal;                  /* 'Medium' is not valid for font-style */
+    font-size: 20px;
+    line-height: 24px;                      /* 100% = 1 */
+    letter-spacing: 0;
+    color: rgba(11, 65, 125, 1);
+    text-decoration: underline;
+    text-decoration-style: solid;
+     text-underline-offset: 4px;          /* Use px or em, not % */
+    text-decoration-thickness: 0;      /* 0% is invalid; set a minimum thickness */
+    text-decoration-skip-ink: auto;
+    background-color: white;
+    border: none;
+}
+.see-our-blogs .main .view-all-see-mobile {
+    display: none;
+}
+.see-our-blogs .main .content {
+    display: flex;
+    gap: 32px;
+    /* flex-wrap: wrap; */
+}
+.see-our-blog-card {
+    width: 360px;
+    height: 420px;
+    border-radius: 20px;
+    padding: 10px 10px 16px 10px;
+    box-shadow: 0px 4.65px 39.2px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.see-our-blog-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.passport-type {
+    background: rgba(255, 194, 0, 0.1);
+    height: 22px;
+    color: rgba(255, 194, 0, 1);
+    padding: 5px 10px;
+    font-weight: 500;          /* Medium weight */
+    font-style: normal;        /* 'Medium' is invalid for font-style */
+    font-size: 10px;
+    line-height: 12px;            /* 100% = 1 (unitless preferred) */
+    letter-spacing: 0;
+    text-align: center;
+    border-radius: 1200px;
+    width: fit-content;
+}
+.passport-type-visa-not {
+    background-color: rgba(0, 149, 255, 0.1);
+    color: rgba(0, 149, 255, 1);
+}
+.see-our-blog-card-content-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
+}
+.see-our-blog-card-content-data h1 {
+
+    font-weight: 500;        /* Medium weight */
+    font-style: normal;      /* 'Medium' is not a valid font-style */
+    font-size: 16px;
+    line-height: 19px;          /* 100% = 1 (unitless preferred) */
+    letter-spacing: 0;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 0;
+}
+.see-our-blog-card-content-data p {
+    font-weight: 500;        /* Medium weight */
+    font-style: normal;      /* 'Medium' is not a valid value for font-style */
+    font-size: 14px;
+    line-height: 17px;          /* 100% = 1 (unitless preferred) */
+    letter-spacing: 0;
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 0;
+}
+.read-more-btn {
+    height: 33px;
+    padding: 8px 38px;
+    background-color: rgba(11, 65, 125, 1);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;        /* Medium weight */
+    font-style: normal;      /* 'Medium' is not valid for font-style */
+    font-size: 14px;
+    letter-spacing: 0;
+    border-radius: 1000px;
+    width: fit-content;
+    align-self: center;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    line-height: 17px;
+}
+@media (max-width: 767px) {
+    .read-more-btn { 
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .see-our-blogs {
+        padding: 46px 20px;
+    }
+    .see-our-blogs .main .heading {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .see-our-blogs .main .heading h1 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .see-our-blogs .main .heading .view-all-see {
+        display: none;
+    }
+    .see-our-blogs .main .view-all-see-mobile {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;                    /* Medium weight */
+        font-style: normal;                  /* 'Medium' is not valid for font-style */
+        font-size: 20px;
+        line-height: 24px;                      /* 100% = 1 */
+        letter-spacing: 0;
+        color: rgba(11, 65, 125, 1);
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-underline-offset: 4px;          /* Use px or em, not % */
+        text-decoration-thickness: 0;      /* 0% is invalid; set a minimum thickness */
+        text-decoration-skip-ink: auto;
+        background-color: white;
+        border: none;
+        display: block;
+    }
+    .see-our-blogs .main {
+        gap: 32px;
+        height: auto;
+    }
+    .see-our-blogs .main .content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .see-our-blog-card-content img {
+        width: auto;
+        height: 204px;
+    }
+    .passport-type {
+        padding: 4px 10px;
+        height: 20px;
+    }
+    .see-our-blog-card-content-data h1 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .see-our-blog-card-content-data p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+}
+@media (min-width:768px) and  (max-width: 1330px) {
+    .see-our-blogs {
+        padding: 72px 60px;
+    }
+    .see-our-blogs .main .content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .see-our-blogs .main .heading h1 {
+        font-size: 34px;
+        line-height: 44px;
+    }
+}
+@media (max-width:390px) {
+    .see-our-blog-card {
+        width: -webkit-fill-available;
+    }
+}
+
+@media (min-width: 1441px) {
+.see-our-blog-card {
+    width: 512px;
+    height: 497px;
+}
+.see-our-blog-card-content img {
+    width: 100%;
+    height: 220px;
+}
+.passport-type {
+    height: 27px;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 5px 10px;
+}
+.see-our-blog-card-content-data h1 {
+    font-size: 20px;
+    line-height: 24px;
+}
+.see-our-blog-card-content-data p {
+    font-size: 16px;
+    line-height: 17px;
+}
+.read-more-btn {
+    height: 43px;
+    font-size: 16px;
+}
+}

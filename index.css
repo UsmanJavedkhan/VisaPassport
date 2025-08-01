@@ -1,0 +1,452 @@
+
+.header-class-top-sec {
+    background-color: #0B417D;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+     z-index: 1000; 
+}
+.container-fluid {
+  max-width: 1920px;
+  /* max-width: 1440px; */
+  font-family: 'Inter',sans-serif;
+}
+.header-class {
+    height: 36px;
+    background-color: #0B417D;
+    padding-right: 62px;
+    /* width: 1440px; */
+    padding-left: 0;
+    max-width: 1920px;
+    /* max-width: 1440px; */
+    margin: 0 auto;
+    font-size: 14px;
+}
+.header-logo-class-attached {
+  width: 112px;
+  height: 70px;
+}
+.tt-commons {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* or 700 for bold */
+  height: 158px;
+}
+
+.tt-font {
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-white {
+    height: 38px;
+    padding: 10px;
+    font-size: 14px;
+    color:black;
+    font-weight: 400;
+    font-family: "Space Grotesk", sans-serif;
+}
+.nav-btns {
+    height: 42px;
+    display: flex;
+}
+.navbar {
+    padding: 12px 62px;
+    position:sticky;
+    top: 36px;
+    z-index: 1000; /* higher than other elements */
+    background: white;
+    /* margin-bottom: 77px; */
+}
+.navbar .nav-bar-content {
+    height: 70px;
+    border: none;
+}
+.bell-icon-class {
+  margin-top: 1px;
+}
+.no-caret::after {
+    display: none !important;
+}
+.nav-btns .dropdown {
+    display: flex;
+    align-items: center;
+}
+.login-btn {
+    height: 41px;
+    padding: 0 30px;
+    border-radius: 99px;
+    background-color: #0B417D;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-style: regular;
+}
+.login-btn:hover{
+    color: white;
+}
+.btn-gap-6 {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+.nav-btns .btn:not(.login-btn) {
+  /* border-bottom: 3px solid transparent; */
+  transition: border-color 0.1s linear;
+}
+
+.nav-btns .btn:not(.login-btn) {
+  transition: border-bottom 0.1s ease;
+  border: none; /* clear all borders initially */
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.nav-btns .btn:not(.login-btn):hover {
+  border-bottom: 3px solid #FFC200 !important;
+  background-color: transparent; /* optional: avoid background flicker */
+}
+.nav-btns .btn:not(.login-btn):hover::after {
+  background-color: #FFC200;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%; /* adjust this to control how short the underline is */
+  height: 2px;
+}
+
+
+.pre-custom-dropdown {
+  position: relative;
+}
+
+.pre-custom-btn,
+.pre-custom-dropdown-toggle,
+.pre-custom-dropdown-button {
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent;
+  border: none;
+  position: relative;
+  height: 38px;
+  padding: 10px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-style: normal; /* 'Regular' should be written as 'normal' in CSS */
+  font-size: 14px;
+  line-height: 1; /* 100% = 1 */
+  letter-spacing: 0;
+  color: rgba(0, 0, 0, 1);
+}
+
+.pre-custom-btn::after,
+.pre-custom-dropdown-toggle::after,
+.pre-custom-dropdown-button::after {
+  content: "";
+  position: absolute;
+  left: 48%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: rgba(255, 194, 0, 1);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.pre-custom-btn:hover::after,
+.pre-custom-dropdown-toggle:hover::after,
+.pre-custom-dropdown-button:hover::after {
+  width: 50%;
+}
+.mobile-contact-number-header {
+  display: none;
+}
+.mobile-view-bottom-btns {
+  display: none;
+}
+@media (max-width: 767px) {
+  .header-logo-class-attached {
+    width: 80px;
+    height: 50px;
+  }
+  .navbar {
+    top: 30px;
+    padding: 12px 20px;
+    height: 74px;
+    margin-bottom: 0;
+  }
+  .nav-btns {
+    display: none;
+  }
+  .header-class {
+    height: 30px;
+    margin: auto;
+    padding-bottom: 3px;
+    font-size: 10px;
+  }
+  .header-class p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .header-top-sec-phone-number {
+    display: none;
+  }
+  .bell-icon-class {
+    height: 14px;
+    width: 14px;
+    padding-bottom: 3px;
+  }
+  .mobile-contact-number-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 100px;
+    height: 32px;
+    border: 0.5px solid rgba(11, 65, 125, 1);
+    font-weight: 400;         /* Regular */
+    font-style: normal;       /* 'Regular' is not valid, use 'normal' */
+    font-size: 12px;
+    line-height: 15px;           /* 100% = 1 (unitless is preferred) */
+    letter-spacing: 0;
+    background-color: white;
+    outline: none;
+    color:rgba(11, 65, 125, 1);
+  }
+  .mobile-view-bottom-btns {
+  display: block;
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+  background-color: white;
+  height: 70px;
+  width: 100%;
+  padding: 15px 20px 24px;
+
+  box-shadow: 0px -6px 64px 0px rgba(0, 103, 218, 0.3);
+
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+
+  position: sticky;
+  overflow: hidden;
+
+  /* Side borders (optional if needed) */
+  /* border-left: 1px solid rgba(11, 65, 125, 0.4);
+  border-right: 1px solid rgba(11, 65, 125, 0.4); */
+  border-bottom: none;
+  border:1px solid  #0B417D;
+   /* We’ll draw top border manually */
+}
+
+/* Add this CSS for the top gradient border using ::before */
+.mobile-view-bottom-btns::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px; /* Top border thickness */
+  width: 100%;
+  /* background: linear-gradient(to right, #0B417D, #0B417D); */
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+/* .mobile-view-bottom-btns {
+  display: block;
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+  background-color: white;
+  height: 79px;
+  width: 100%;
+  padding: 15px 20px 24px;
+  box-shadow: 0px -6px 64px 0px rgba(0, 103, 218, 0.3);
+  
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border-style: solid;
+  border-width: 1px 1px 0px 1px;
+  border-image-source: linear-gradient(to bottom, #0B417D, #FFFFFF);
+  border-image-slice: 1;
+  border-image-repeat: stretch;
+} */
+
+  .mobile-view-bottom-btns .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile-view-bottom-btns .content .mobile-view-btn {
+    outline: 0;
+    border: 0;
+    height: 40px;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;         /* Regular */
+    font-style: normal;       /* Use 'normal' instead of 'Regular' */
+    font-size: 10px;
+    line-height: 12px;           /* 100% = 1 (unitless preferred) */
+    letter-spacing: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+}
+@media ((min-width: 768px) and (max-width:992px)) {
+  .header-logo-class-attached {
+    width: 80px;
+    height: 50px;
+  }
+  .header-class {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .header-class-phone-icon {
+    width: 14px;
+    height: 14px;
+  }
+  .header-class-location-icon {
+    width: 14px;
+    height: 14px;
+  }
+  .bell-icon-class {
+    width: 14px;
+    height: 14px;
+  }
+  .pre-custom-btn,
+.pre-custom-dropdown-toggle,
+.pre-custom-dropdown-button {
+  padding: 10px 8px;
+  font-size: 12px;
+  line-height: 15px;
+  height: 42px;
+}
+.login-btn {
+  font-size: 12px;
+  line-height: 15px;
+}
+  .mobile-contact-number-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 100px;
+    height: 32px;
+    border: 0.5px solid rgba(11, 65, 125, 1);
+    font-weight: 400;         /* Regular */
+    font-style: normal;       /* 'Regular' is not valid, use 'normal' */
+    font-size: 12px;
+    line-height: 15px;           /* 100% = 1 (unitless is preferred) */
+    letter-spacing: 0;
+    background-color: white;
+    outline: none;
+     color:rgba(11, 65, 125, 1);
+     display: none;
+  }
+  .header-top-sec-phone-number {
+    display: block;
+  }
+  .header-top-sec-phone-number-track-my-app {
+    display: none;
+  }
+  .navbar {
+    padding: 12px 60px;
+    margin-bottom: 0;
+  }
+  .nav-btns {
+    display: flex;
+    /* padding: 12px 60px; */
+  }
+  .mobile-view-bottom-btns {
+  display: none;
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+  background-color: white;
+  height: 79px;
+  width: 100%;
+  padding: 15px 20px 24px;
+
+  box-shadow: 0px -6px 64px 0px rgba(0, 103, 218, 0.3);
+
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+
+  position: sticky;
+  overflow: hidden;
+
+  /* Side borders (optional if needed) */
+  /* border-left: 1px solid rgba(11, 65, 125, 0.4);
+  border-right: 1px solid rgba(11, 65, 125, 0.4); */
+  border-bottom: none;
+  border:1px solid  #0B417D;
+   /* We’ll draw top border manually */
+}
+
+/* Add this CSS for the top gradient border using ::before */
+.mobile-view-bottom-btns::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px; /* Top border thickness */
+  width: 100%;
+  /* background: linear-gradient(to right, #0B417D, #0B417D); */
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+  .mobile-view-bottom-btns .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile-view-bottom-btns .content .mobile-view-btn {
+    outline: 0;
+    border: 0;
+    height: 40px;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;         /* Regular */
+    font-style: normal;       /* Use 'normal' instead of 'Regular' */
+    font-size: 10px;
+    line-height: 12px;           /* 100% = 1 (unitless preferred) */
+    letter-spacing: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+}
+@media (min-width: 1441px) {
+  .header-class {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .header-class-phone-icon {
+    width: 18px;
+    height: 18px;
+  }
+  .pre-custom-btn, .pre-custom-dropdown-toggle, .pre-custom-dropdown-button {
+    height: 40px;
+    font-size: 16px;
+  }
+  .login-btn {
+    height: 43px;
+    border-radius: 1000px;
+    padding: 12px 30px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

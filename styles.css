@@ -1,0 +1,73 @@
+.fs-12 {
+  font-size: 12px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-48 {
+  font-size: 48px;
+}
+                        /*  gap sizes */
+.gap-6 {
+    gap: 6px;
+}
+.gap-12 {
+  gap: 12px;
+}
+.gap-13 {
+  gap: 13px;
+}
+.gap-104 {
+    gap: 104px;
+}
+.gap-20 {
+  gap: 20px;
+}
+.gap-10 {
+  gap: 10px;
+}
+.gap-35 {
+  gap: 35px;
+}
+.gap-60 {
+  gap: 60px;
+}
+                            /* font weight sizes */
+.lh-35 {
+  line-height: 35px;
+}
+.lh-58 {
+  line-height: 58px;
+}
+.lh-100 {
+  line-height: 100%;
+}
+                                /* colors */
+.primary-blue {
+  color: rgba(11, 65, 125, 1);
+
+}
+.primary-orange {
+  color: rgba(255, 194, 0, 1);
+}
+.primary-black {
+  color: rgba(0, 0, 0, 1);
+}
+.secondary-black {
+  color: rgba(0, 0, 0, 0.8);
+}
+.secondary-black-light {
+  color: rgba(0, 0, 0, 0.7);
+}
+.h-64 {
+  height: 64px;
+}
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+.font-weight-medium {
+  font-weight: 500;
+}
