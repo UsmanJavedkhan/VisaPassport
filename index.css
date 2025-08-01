@@ -259,6 +259,14 @@
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
 }
+#stickyButton {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  z-index: 1000;
+}
 
 /* .mobile-view-bottom-btns {
   display: block;
@@ -428,6 +436,9 @@
     align-items: center;
     gap: 4px;
   }
+
+
+
 }
 @media (min-width: 1441px) {
   .header-class {
