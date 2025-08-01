@@ -85,7 +85,7 @@
     padding:6px 12px;
 }
 .expedited-passports-img {
-  background-image: url('./public/expedited/passport1.jpg');
+  background-image: url('./public/expedited/Hero\ image.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -614,7 +614,7 @@
     padding-bottom: 0;
   }
   .expedited-passports-img {
-    background-image: url('./public/expedited/passport-1-lg.svg');
+    background-image: url('./public/expedited/Hero\ image.png');
     height: 707px;
     background-position: top;
   }
